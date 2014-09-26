@@ -69,11 +69,11 @@ var Pager = (function () {
 	};
 
 	Pager.prototype.first = function() {
-		return this.current = this.getFirst();
+		return (this.current = this.getFirst());
 	};
 
 	Pager.prototype.last = function() {
-		return this.current = this.getLast();
+		return (this.current = this.getLast());
 	};
 
 	return Pager;
