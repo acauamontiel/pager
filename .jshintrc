@@ -15,5 +15,6 @@
   "eqnull": true,
   "browser": true,
   "devel": true,
-  "node": true
+  "node": true,
+  "predef": ["define"]
 }
