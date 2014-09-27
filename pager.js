@@ -12,15 +12,27 @@
 	'use strict';
 
 	function Pager (length, circular) {
+		if (isNaN(length)) {
+			throw 'The "length" parameter must be a number';
+		}
+
+		if ('undefined' !== typeof circular && 'boolean' !== typeof circular) {
+			throw 'The "circular" parameter must be a boolean';
+		}
+
 		this.current = 0;
-		this.length = length;
+		this.length = parseInt(length);
 		this.circular = ('undefined' === typeof circular) ? true : circular;
 	}
 
 	Pager.prototype = {
 		set: function(index) {
+			if (isNaN(length)) {
+				throw 'The "length" parameter must be a number';
+			}
+
 			var last = this.getLast();
-			this.current = (last >= index) ? index : last;
+			this.current = (last >= index) ? parseInt(index) : last;
 		},
 
 		hasPrev: function() {
@@ -33,7 +45,7 @@
 
 		getPrev: function () {
 			if (this.hasPrev()) {
-				return parseInt(this.current) - 1;
+				return this.current - 1;
 			} else {
 				return (this.circular) ? this.getLast() : false;
 			}
@@ -41,7 +53,7 @@
 
 		getNext: function() {
 			if (this.hasNext()) {
-				return parseInt(this.current) + 1;
+				return this.current + 1;
 			} else {
 				return (this.circular) ? 0 : false;
 			}
