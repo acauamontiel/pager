@@ -16,13 +16,13 @@
 			throw 'The "length" parameter must be a number';
 		}
 
-		if ('undefined' !== typeof circular && 'boolean' !== typeof circular) {
+		if (circular && 'boolean' !== typeof circular) {
 			throw 'The "circular" parameter must be a boolean';
 		}
 
 		this.current = 0;
 		this.length = parseInt(length);
-		this.circular = ('undefined' === typeof circular) ? true : circular;
+		this.circular = circular || true;
 	}
 
 	Pager.prototype = {
