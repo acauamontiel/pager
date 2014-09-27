@@ -145,7 +145,8 @@ Then you can:
 
 ### Running
 
-You can run the app locally by [Gulp](http://gulpjs.com)
+You can build by [Gulp](http://gulpjs.com)
+
 
 #### Available Gulp commands
 
