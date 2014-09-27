@@ -147,6 +147,6 @@ Run `gulp watch` to watch JavaScript files
 License
 -------
 
-© 2014 Acauã Montiel
+© 2014 [Acauã Montiel](http://acauamontiel.com.br)
 
 [MIT License](http://acaua.mit-license.org/)
