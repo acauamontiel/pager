@@ -102,7 +102,7 @@ Returns the last index
 myPager.prev(); // return number
 ```
 
-Sets the current index with the previous index, if the **circular** option is true and the current index is 0 it will return the last index
+Sets and returns the current index with the previous index, if the **circular** option is true and the current index is 0 it will return the last index
 
 
 #### .next()
@@ -111,7 +111,25 @@ Sets the current index with the previous index, if the **circular** option is tr
 myPager.next(); // return number
 ```
 
-Sets the current index with the next index, if the **circular** option is true and the current index is the last index it will return the first index
+Sets and returns the current index with the next index, if the **circular** option is true and the current index is the last index it will return the first index
+
+
+#### .first()
+
+```javascript
+myPager.first(); // return number
+```
+
+Sets the current index with the first index and return it
+
+
+#### .last()
+
+```javascript
+myPager.last(); // return number
+```
+
+Sets the current index with the last index and return it
 
 
 Building
