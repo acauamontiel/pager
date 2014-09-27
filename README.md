@@ -27,10 +27,8 @@ var myPager = new Pager(length, circular);
 
 ### Options
 
-* **length** - Specifies the amount of items
-
-
-* **circular** - Specifies whether to wrap at the first/last item and jump back to the start/end
+* **length** `Number` - Specifies the amount of items
+* **circular** `Boolean` - Specifies whether to wrap at the first/last item and jump back to the start/end
 
 
 ### API
