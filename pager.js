@@ -27,8 +27,8 @@
 
 	Pager.prototype = {
 		set: function(index) {
-			if (isNaN(length)) {
-				throw 'The "length" parameter must be a number';
+			if (isNaN(index)) {
+				throw 'The "index" parameter must be a number';
 			}
 
 			var last = this.getLast();
