@@ -16,7 +16,7 @@ It's very simple to use Pager. You will need to [download](https://github.com/ac
 Then you just need to include the file in your HTML:
 
 ```html
-<script src="bower_components/paager.min.js"></script>
+<script src="bower_components/pager.min.js"></script>
 ```
 
 Now you can create a new instance:
