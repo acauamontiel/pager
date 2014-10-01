@@ -26,6 +26,8 @@
 	}
 
 	Pager.prototype = {
+		constructor: Pager,
+
 		set: function(index) {
 			if (isNaN(index)) {
 				throw 'The "index" parameter must be a number';
