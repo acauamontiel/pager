@@ -1,6 +1,6 @@
 {
   "name": "pager-boilerplate",
-  "version": "1.0.0-rc3",
+  "version": "1.0.0",
   "description": "A very simple and useful pager boilerplate",
   "main": "pager.js",
   "scripts": {

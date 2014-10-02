@@ -1,7 +1,7 @@
 {
   "name": "pager",
   "main": "pager.js",
-  "version": "1.0.0-rc3",
+  "version": "1.0.0",
   "homepage": "https://github.com/acauamontiel/pager",
   "authors": [
     "Acauã Montiel <contato@acauamontiel.com.br>"
