@@ -36,9 +36,13 @@
 			var first = this.getFirst(),
 				last = this.getLast();
 
-			this.current = (index <= first) ? first
-						 : (index >= last) ? last
-						 : index;
+			this.current = index;
+
+			if (index <= first) {
+				this.current = first;
+			} else if (index >= last) {
+				this.current = last;
+			}
 		},
 
 		hasPrev: function() {
