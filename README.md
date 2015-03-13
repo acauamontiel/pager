@@ -1,5 +1,5 @@
-Pager
-=====
+Pager v1.0.1
+============
 
 > A very simple and useful pager boilerplate
 
