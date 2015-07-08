@@ -4,6 +4,7 @@ Pager v1.0.1
 > A very simple and useful pager boilerplate
 
 [![Bower version](https://badge.fury.io/bo/pager.svg)](http://badge.fury.io/bo/pager)
+[![npm version](https://badge.fury.io/js/pager-js.svg)](http://badge.fury.io/js/pager-js)
 
 ---
 
@@ -11,12 +12,26 @@ Pager v1.0.1
 Usage
 -----
 
-It's very simple to use Pager. You will need to [download](https://github.com/acauamontiel/pager/archive/master.zip) the files, or just run the following command line to install the Bower package: `bower install pager --save`
+It's very simple to use Pager. You will need to [download](https://github.com/acauamontiel/pager/archive/master.zip) the files, or just run some of these following command lines: `bower install pager --save` or `npm i pager-js --save`
 
 Then you just need to include the file in your HTML:
 
 ```html
 <script src="bower_components/pager.min.js"></script>
+```
+
+If you're in a CommonJS environment:
+
+```javascript
+var Pager = require('pager-js');
+```
+
+Or if you're in a AMD environment:
+
+```javascript
+require(['path-to/pager'], function (Pager) {
+	// ...
+});
 ```
 
 Now you can create a new instance:
